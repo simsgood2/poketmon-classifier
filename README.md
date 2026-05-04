@@ -201,4 +201,5 @@ Backbone: resnet34
 Top-K: 5
 ```
 
-![Demo GUI](assets/demo.png)
+![Demo GUI](assets/demo.png)<br>
+<img src="assets\image.png" width="1000" height="1000"/>
