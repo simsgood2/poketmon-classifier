@@ -1,0 +1,36 @@
+common:
+  data_dir: data/pokemon
+  output_dir: outputs
+  image_size: 224
+  batch_size: 32
+  epochs: 10
+  lr: 0.001
+  weight_decay: 0.0001
+  num_workers: 2
+  seed: 42
+
+experiments:
+  resnet18_head_only:
+    backbone: resnet18
+    pretrained: true
+    freeze_backbone: true
+    unfreeze_last_block: false
+
+  resnet34_finetune_last:
+    backbone: resnet34
+    pretrained: true
+    freeze_backbone: true
+    unfreeze_last_block: true
+
+  mobilenet_head_only:
+    backbone: mobilenet_v3_small
+    pretrained: true
+    freeze_backbone: true
+    unfreeze_last_block: false
+
+  efficientnet_finetune_last:
+    backbone: efficientnet_b0
+    pretrained: true
+    freeze_backbone: true
+    unfreeze_last_block: true
+
