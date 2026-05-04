@@ -138,14 +138,6 @@ outputs/<실험 이름>/metrics.json
 
 따라서 README의 실험 결과 표는 각 실험 폴더의 `metrics.json` 값을 사용하여 채우면 됩니다.
 
-학습된 모델의 클래스별 상세 평가 결과와 confusion matrix를 추가로 저장하려면 다음 명령어를 사용합니다.
-
-```bash
-python src/evaluate.py --checkpoint outputs/resnet18_head_only/best_model.pt --data-dir data/pokemon --backbone resnet18
-```
-
-이 명령어를 따로 실행하면 상세 평가 결과가 `outputs/<실험 이름>/evaluation.json`에 저장됩니다. `evaluation.json`은 선택 사항이며, 기본 성능 비교에는 `metrics.json`을 사용합니다.
-
 ## 데모 GUI 실행
 
 Streamlit 데모를 실행합니다.
