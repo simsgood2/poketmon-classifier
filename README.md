@@ -40,7 +40,7 @@ poketmon-calssifier/
 
 ## 데이터셋
 
-사용 데이터셋:
+사용 데이터셋: https://www.kaggle.com/datasets/lantian773030/pokemonclassification
 
 - Pokemon image dataset
 - 클래스별 폴더 구조
